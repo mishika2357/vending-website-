@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>EasyCart</title>
+
+    <link rel="stylesheet"
+    href="style.css">
+
+</head>
+
+<body>
+    
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+        
+
+        <h1 class="logo">
+            EasyCart
+        </h1>
+
+        <div class="nav-right">
+
+            <!-- search -->
+
+            <input
+            type="text"
+
+            id="search"
+
+            placeholder="Search product..."
+
+            onkeyup="searchProduct()">
+
+            <!-- buttons -->
+             <!-- =========================
+     NAVBAR TABS
+========================= -->
+
+
+<div class="nav-tabs">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="reviews.html">
+        Reviews
+    </a>
+
+    <a href="about.html">
+        About
+    </a>
+
+    <a href="offers.html">
+        Offers
+    </a>
+
+    <a href="contact.html">
+        Contact
+    </a>
+
+</div>
+
+             
+
+            <div class="top-buttons">
+
+                <button class="cart-btn">
+
+                    🛒 Cart
+
+                    <span id="cartCount">
+                        0
+                    </span>
+
+                </button>
+
+                <button
+                class="theme-btn"
+
+                onclick="toggleDarkMode()">
+
+                    🌙
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+
+            Fresh Snacks <br>
+            Delivered Fast
+
+        </h1>
+
+        <p>
+
+            Buy snacks, drinks, chocolates and instant food
+            at affordable prices.
+
+        </p>
+
+        <!-- updated button -->
+
+        <button
+        class="shop-btn"
+
+        onclick="goToProducts()">
+
+            Shop Now
+
+        </button>
+
+    </div>
+
+</section>
+ <!-- =========================
+         CATEGORY FILTER
+    ========================== -->
+
+    <div class="category-section">
+
+        <select
+        id="category"
+
+        onchange="filterCategory()">
+
+            <option value="all">
+                All
+            </option>
+
+            <option value="Drinks & Juice">
+                Drinks & Juice
+            </option>
+
+            <option value="Chips & Namkeen">
+                Chips & Namkeen
+            </option>
+
+            <option value="Biscuit & Chocolate">
+                Biscuit & Chocolate
+            </option>
+
+            <option value="Instant Food">
+                Instant Food
+            </option>
+
+        </select>
+
+    </div>
+
+<!-- =========================
+     PRODUCTS SECTION
+========================== -->
+
+<section
+class="products"
+
+id="products">
+
+    <h2 class="product-heading">
+
+        Products
+
+    </h2>
+
+    <p class="product-text">
+
+        Choose your favorite snacks and drinks
+
+    </p>
+
+    <div
+    class="product-grid"
+
+    id="productContainer">
+
+    </div>
+
+</section>
+
+    <!-- =========================
+         CART SECTION
+    ========================== -->
+
+    <section class="cart-section">
+
+        <h2>
+
+            🛒 Your Cart
+
+        </h2>
+
+        <div id="cartContainer">
+
+        </div>
+
+        <div class="total">
+
+            Total: ₹
+
+            <span id="totalPrice">
+
+                0
+
+            </span>
+
+        </div>
+
+        <button
+        class="checkout-btn"
+
+        onclick="checkout()">
+
+            Checkout
+
+        </button>
+
+    </section>
+    
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+
+            © 2024 EasyCart.
+            All rights reserved.
+
+        </p>
+
+    </footer>
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
